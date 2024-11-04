@@ -8,12 +8,22 @@
 <body>
     <form id="craftingForm" action="" method="GET">
 <!-- Use this one with method 2 in script.js <form id="craftingForm" action="" method="GET" onsubmit="submitFunction(event)"> -->
-        <label for="name">name:</label>
-        <input type="text" id="name" placeholder="Name here" minlength="3" maxlength="15"><br>
-        
+        <label for="name">Project Name:</label>
+        <input type="text" id="name" placeholder="Name here" minlength="3" maxlength="30" required><br>
+        <br>
+        <label for="medium">Medium:</label><br>
+        <label for="sewing">Sewing:</label>
+        <input type="radio" id="sewing" value="sewing" name="medium" required><br>
+        <label for="crochet">Crochet:</label>
+        <input type="radio" id="crochet" value="crocheting" name="medium" required><br>
+        <label for="knitting">Knitting:</label>
+        <input type="radio" id="knitting" value="knitting" name="medium" required><br>
+        <br>
         <input type="reset">
         <input id="submitBtn" type="submit">
-        <p id="demo"></p>
+        <p id="projectDescription">Project Description</p>
+        <p id="projectName"></p>
+        <p id="craftType"></p>
 
     </form>
     <script src="script.js"></script>
