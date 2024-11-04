@@ -1,9 +1,16 @@
+let projectArray = []
+let mediumArray = []
+
 //method 1, where you don't have an 'onSubmit' function
 document.getElementById('craftingForm').addEventListener('submit', 
     function(event) {
         event.preventDefault();
-        document.getElementById("projectName").innerHTML = `My project is called ${event.target.name.value}`;
-        document.getElementById("craftType").innerHTML = `I will be ${event.target.medium.value} this project`;
+        projectArray.push(event.target.name.value)
+        mediumArray.push(event.target.medium.value)
+        console.log(projectArray)
+        console.log(mediumArray)
+        document.getElementById("projectName").innerHTML = `My list of projects are: ${projectArray}`;
+        document.getElementById("craftType").innerHTML = `I will be using these mediums: ${mediumArray} `;
 
 });
 
