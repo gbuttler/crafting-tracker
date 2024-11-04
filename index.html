@@ -6,19 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="GET" onsubmit=alertFunction()>
+    <form id="craftingForm" action="" method="GET">
+<!-- Use this one with method 2 in script.js <form id="craftingForm" action="" method="GET" onsubmit="submitFunction(event)"> -->
         <label for="name">name:</label>
-        <input type="'text" id="name" placeholder="Name here" minlength="6" maxlength="15"><br>
-        
-
+        <input type="text" id="name" placeholder="Name here" minlength="3" maxlength="15"><br>
         
         <input type="reset">
-        <input type="submit">
-        <button id="button">CLICK ME</button>
+        <input id="submitBtn" type="submit">
         <p id="demo"></p>
 
     </form>
-    <script href="/crafting-tracker/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
